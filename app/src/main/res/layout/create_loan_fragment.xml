@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/buttonClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardConditions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="62dp"
+        android:elevation="3dp"
+        style="@style/cardStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageAttention"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_outline_error_24" />
+
+        <TextView
+            android:id="@+id/textConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/textCondition"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAppearance="@style/titleText24" />
+
+        <TextView
+            android:id="@+id/textPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/textPercent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textConditions"
+            android:textAppearance="@style/baseText16" />
+
+        <TextView
+            android:id="@+id/textPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/textPeriod"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPercent"
+            android:textAppearance="@style/baseText16" />
+
+        <TextView
+            android:id="@+id/textPercentValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toEndOf="@id/textPercent"
+            app:layout_constraintTop_toBottomOf="@id/textConditions"
+            android:textAppearance="@style/baseText16" />
+
+        <TextView
+            android:id="@+id/textSymbolPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/textPercentValue"
+            app:layout_constraintTop_toTopOf="@id/textPercentValue"
+            android:textAppearance="@style/baseText16"
+            android:text="@string/textSymbolPercent" />
+
+        <TextView
+            android:id="@+id/textPeriodValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toEndOf="@id/textPeriod"
+            app:layout_constraintTop_toBottomOf="@id/textPercentValue"
+            android:textAppearance="@style/baseText16" />
+
+        <TextView
+            android:id="@+id/textDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/textPeriodValue"
+            app:layout_constraintTop_toTopOf="@id/textPeriodValue"
+            android:layout_marginStart="5dp"
+            android:textAppearance="@style/baseText16"
+            android:text="@string/textDays" />
+
+        <TextView
+            android:id="@+id/textMaxAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/textMaxAmount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPeriod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAppearance="@style/baseText16" />
+
+        <TextView
+            android:id="@+id/textMaxAmountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toEndOf="@id/textMaxAmount"
+            app:layout_constraintTop_toBottomOf="@id/textPeriodValue"
+            android:textAppearance="@style/baseText16" />
+
+        <TextView
+            android:id="@+id/textMaxAmountRub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/textMaxAmountValue"
+            app:layout_constraintTop_toTopOf="@id/textMaxAmountValue"
+            android:layout_marginStart="5dp"
+            android:textAppearance="@style/baseText16"
+            android:text="@string/textRub" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardLoan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        android:elevation="3dp"
+        style="@style/cardStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardConditions">
+
+        <ImageView
+            android:id="@+id/imageCard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/ic_baseline_add_card_24"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textLoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/textCreateLoan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAppearance="@style/titleText24" />
+
+        <TextView
+            android:id="@+id/textLastName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/textLastName"
+            android:textAppearance="@style/baseText16"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextLastName"
+            app:layout_constraintTop_toTopOf="@id/editTextLastName"
+            app:layout_constraintEnd_toStartOf="@+id/editTextLastName" />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            style="@style/editTextCreate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="54dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLoan" />
+
+        <TextView
+            android:id="@+id/textFisrtName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/textName"
+            android:textAppearance="@style/baseText16"
+            app:layout_constraintEnd_toStartOf="@+id/editTextFirstName"
+            app:layout_constraintTop_toTopOf="@+id/editTextFirstName" />
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            style="@style/editTextCreate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="54dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/editTextLastName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
+
+        <TextView
+            android:id="@+id/textPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/textPhone"
+            android:textAppearance="@style/baseText16"
+            app:layout_constraintEnd_toStartOf="@+id/editTextPhone"
+            app:layout_constraintTop_toTopOf="@+id/editTextPhone" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            style="@style/editTextCreate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="54dp"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/editTextFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextFirstName" />
+
+        <TextView
+            android:id="@+id/textAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/textAmount"
+            android:textAppearance="@style/baseText16"
+            app:layout_constraintEnd_toStartOf="@+id/editTextAmount"
+            app:layout_constraintTop_toTopOf="@+id/editTextAmount" />
+
+        <EditText
+            android:id="@+id/editTextAmount"
+            style="@style/editTextCreate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_marginEnd="54dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/editTextPhone"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhone" />
+
+        <TextView
+            android:id="@+id/textAmountRub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/textRub"
+            android:textAppearance="@style/baseText16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toEndOf="@id/editTextAmount"
+            app:layout_constraintTop_toTopOf="@id/editTextAmount" />
+
+        <TextView
+            android:id="@+id/textPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textAppearance="@style/baseText16"
+            app:layout_constraintTop_toBottomOf="@id/editTextAmount"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textAppearance="@style/baseText18Normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardLoan" />
+
+    <Button
+        android:id="@+id/buttonPost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="@string/textButtonPost"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textError"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textSomethingWrong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="@string/textSomethingWrong"
+        android:textAppearance="@style/baseText18Normal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

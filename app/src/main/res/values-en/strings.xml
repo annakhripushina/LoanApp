@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Loan_app</string>
+    <string name="textHello">Hello!</string>
+    <string name="textInfo">We have made borrowing easy.</string>
+    <string name="textInfoAdd">To apply, click the green button in the upper right corner.
+        \nFill in the required information. \nSubmit your application and wait \nwhen it is approved.
+        \n\nTo update the list of requests, drag the screen down.</string>
+    <string name="textInfoInfo">If you forgot something, click on the information button.</string>
+    <string name="textAttention">Attention!</string>
+    <string name="textAttentionMessage">Study the terms of the loan, \n so that there are no problems in the future.</string>
+    <string name="textUnderstand">I\'m understood, thank you!</string>
+    <string name="textDate">Created:</string>
+    <string name="textDateValue">Created: %1$s</string>
+    <string name="textAmount">Amount:</string>
+    <string name="textAmountValueRub">Amount: %1$s руб.</string>
+    <string name="textLoan">Loans</string>
+    <string name="textRub">rub.</string>
+    <string name="textApproved">Approved</string>
+    <string name="textRegistered">Registered</string>
+    <string name="textRejected">Rejected</string>
+    <string name="textPercent">Percent:</string>
+    <string name="textPeriod">Loan term:</string>
+    <string name="textMaxAmount">Maximum amount:</string>
+    <string name="textRegistration">Registration</string>
+    <string name="textLogin">Login</string>
+    <string name="textDivider">/</string>
+    <string name="hintLogin">Login</string>
+    <string name="hintPassword">Password</string>
+    <string name="textButtonLogin">Login</string>
+    <string name="textButtonRegistration">Registration</string>
+    <string name="textName">Name:</string>
+    <string name="textPhone">Phone:</string>
+    <string name="textButtonPost">Send</string>
+    <string name="textCondition">Conditions</string>
+    <string name="textLastName">Second\nname:</string>
+    <string name="textCreateLoan">Loan application</string>
+    <string name="textLoanInfo">Your application has been sent.\nYou can see the status of applications in the history and detailed information on the loan.</string>
+    <string name="textButtonHistory">Application history</string>
+    <string name="textCompleted">Loan completed successfully!</string>
+    <string name="textPaymentValue">Monthly payment: %1$s</string>
+    <string name="textSymbolPercent">%</string>
+    <string name="textDays">days</string>
+    <string name="textErrorInput">Fill in all fields in the application.</string>
+    <string name="ErrorAmount">The loan amount exceeds the maximum.</string>
+    <string name="textHttpException">Something went wrong. Try later.</string>
+    <string name="textException">An error has occurred. Check your internet connection.</string>
+    <string name="textErrorUnknown">Unknown error.</string>
+    <string name="textHttpExceptionDb">The data may be out of date. Try later.</string>
+    <string name="textExceptionDb">The data may be out of date. Check your internet connection.</string>
+    <string name="textErrorLoginPassword">Wrong login or password.</string>
+    <string name="textErrorUser">The user already exists.</string>
+    <string name="formatParser">yyyy-MM-dd\'T\'HH:mm:ss.SSSXXX</string>
+    <string name="formatDateTime">dd-MM-yyyy HH:mm</string>
+    <string name="textErrorLengthPassword">The password must be at least 8 characters long.</string>
+    <string name="textErrorUpperPassword">The password must contain Latin letters in upper case.</string>
+    <string name="textErrorLowerPassword">The password must contain Latin letters in lower case.</string>
+    <string name="textErrorSymbolPassword">Password must contain special characters (@#$%^+=-)</string>
+    <string name="textErrorLogin">Login not specified.</string>
+    <string name="textErrorPassword">Password not specified.</string>
+    <string name="textRepayment">Pay up to:</string>
+    <string name="textDateLoan">Application date:</string>
+    <string name="textHowGetLoan">To receive money, you can contact the bank with a passport or make a payment to the card at an ATM.</string>
+    <string name="formatDate">dd-MM-yyyy</string>
+    <string name="textEmptyList">Empty list</string>
+    <string name="textLogOut">To leave your personal account, click on the exit button.</string>
+    <string name="textSomethingWrong">Something went wrong.</string>
+    <string name="textDividerLang">|</string>
+    <string name="textStateValue">Loan</string>
+    <string name="textPerson">Person</string>
+    <string name="textGetLoanInfo">How to get</string>
+    <string name="textRu">Русский</string>
+    <string name="textEn">English</string>
+    <string name="pushText">There are three days left to pay off the loan.</string>
+    <string name="pushTitle">Payment reminder</string>
+</resources>
